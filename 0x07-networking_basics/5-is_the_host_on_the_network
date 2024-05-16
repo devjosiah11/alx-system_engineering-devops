@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Check if argument is provided
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 {IP_ADDRESS}"
+    exit 1
+fi
+
+# Perform ping to the provided IP address
+ping -c 5 $1
+
